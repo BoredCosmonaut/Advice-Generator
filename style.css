@@ -1,0 +1,131 @@
+/* This bit is for css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Below is where the style begins */
+body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: hsl(218, 23%, 16%);
+}
+
+html {
+    font-family: 'Manrope', sans-serif;
+}
+
+#card {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10em auto;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 10px;
+}
+
+#advice-text {
+    text-align: center;
+}
+
+#advice-number {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: hsl(150, 100%, 66%);
+}
+
+#advice-real {
+    width: 80%;
+    margin: auto;
+    font-size: 17px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: hsl(193, 38%, 86%);
+    word-spacing: 3px;
+}
+
+#dice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0px auto;
+    width: 50px;
+    height: 50px;
+    top: 1.4em;
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+}
+
+#dice-image {
+    width: 35px;
+}
+
+#divider-image-pc {
+    display: none;
+}
+
+#dice:hover {
+    cursor: pointer;
+}
+
+@media(min-width:475px) {
+    #card {
+        width: 475px;
+    }
+
+    #advice-real {
+        font-size: 28px;
+    }
+
+    #divider-image {
+        display: none;
+    }
+
+    #divider-image-pc {
+        display: flex;
+    }
+}
